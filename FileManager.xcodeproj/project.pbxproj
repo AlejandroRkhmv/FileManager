@@ -13,6 +13,9 @@
 		2149055E2BE7CE5300733698 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2149055D2BE7CE5300733698 /* Base */; };
 		214905602BE7CE5400733698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2149055F2BE7CE5400733698 /* Assets.xcassets */; };
 		214905632BE7CE5400733698 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 214905622BE7CE5400733698 /* Base */; };
+		2149056B2BE7CECC00733698 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2149056A2BE7CECC00733698 /* NetworkService.swift */; };
+		2149056D2BE7CF2300733698 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2149056C2BE7CF2300733698 /* ViewModel.swift */; };
+		2149056F2BE7CF5100733698 /* DataFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2149056E2BE7CF5100733698 /* DataFileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		2149055F2BE7CE5400733698 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		214905622BE7CE5400733698 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		214905642BE7CE5400733698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2149056A2BE7CECC00733698 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		2149056C2BE7CF2300733698 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		2149056E2BE7CF5100733698 /* DataFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,9 @@
 				214905562BE7CE5300733698 /* AppDelegate.swift */,
 				214905582BE7CE5300733698 /* SceneDelegate.swift */,
 				2149055A2BE7CE5300733698 /* ViewController.swift */,
+				2149056A2BE7CECC00733698 /* NetworkService.swift */,
+				2149056C2BE7CF2300733698 /* ViewModel.swift */,
+				2149056E2BE7CF5100733698 /* DataFileManager.swift */,
 				2149055C2BE7CE5300733698 /* Main.storyboard */,
 				2149055F2BE7CE5400733698 /* Assets.xcassets */,
 				214905612BE7CE5400733698 /* LaunchScreen.storyboard */,
@@ -138,9 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2149056D2BE7CF2300733698 /* ViewModel.swift in Sources */,
 				2149055B2BE7CE5300733698 /* ViewController.swift in Sources */,
 				214905572BE7CE5300733698 /* AppDelegate.swift in Sources */,
+				2149056B2BE7CECC00733698 /* NetworkService.swift in Sources */,
 				214905592BE7CE5300733698 /* SceneDelegate.swift in Sources */,
+				2149056F2BE7CF5100733698 /* DataFileManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
