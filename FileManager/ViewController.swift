@@ -27,11 +27,12 @@ final class ViewController: UIViewController {
     }
     
     private func subscription() {
-        anyCancellable = viewModel.$data
+        anyCancellable = viewModel.objectWillChange
             .receive(on: DispatchQueue.main)
             .sink(receiveValue: { [weak self] data in
-                guard let data else { return }
-                self?.imageView.image = UIImage(data: data)
+                guard let self,
+                      let data = self.viewModel.data else { return }
+                self.imageView.image = UIImage(data: data)
             })
     }
 

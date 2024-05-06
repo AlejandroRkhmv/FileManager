@@ -12,7 +12,7 @@ final class ViewModel: ObservableObject {
     
     let urlString = "https://stunodracing.net/index.php?attachments/redbull-racing-team-png.128674/"
     let networkService = NetworkService()
-    @Published var data: Data?
+    var data: Data?
     private var store: AnyCancellable?
     
     func loadData() {
@@ -29,6 +29,7 @@ final class ViewModel: ObservableObject {
             } receiveValue: { [weak self] data in
                 guard let self else { return }
                 self.data = data
+                self.objectWillChange.send()
             }
     }
     
@@ -50,6 +51,7 @@ final class ViewModel: ObservableObject {
     func read() {
         do {
             self.data = try DataFileManager.shared.read(fileName: "redBullFolder", folderName: "redBull")
+            self.objectWillChange.send()
             print("succes")
         } catch FileManagerErrors.fileNotExists {
             print("not exist")
